@@ -1,23 +1,23 @@
 import os
 
-api_id = int(os.environ.get("API_ID", ""))
-api_hash = os.environ.get("API_HASH", "")
-bot_token = os.environ.get("BOT_TOKEN", "")
+api_id = int(os.environ.get("API_ID", "27200202"))
+api_hash = os.environ.get("API_HASH", "d7f267b4e32cb2e86b2e807c1b1f1c0c")
+bot_token = os.environ.get("BOT_TOKEN", "6235791848:AAG2ULtzvHLY06KRLmpeGeu4XxdAkmfU1Z4")
 # =========================================================== #
 
-db_url = os.environ.get("DB_URL", "")
-db_name = os.environ.get("DB_NAME", "telegram")
+db_url = os.environ.get("DB_URL", "mongodb+srv://fess1:fess1@cluster0.faqansq.mongodb.net/?retryWrites=true&w=majority")
+db_name = os.environ.get("DB_NAME", "menfes1")
 # =========================================================== #
 
-channel_1 = int(os.environ.get("CHANNEL_1", ""))
-channel_2 = int(os.environ.get("CHANNEL_2", ""))
-channel_log = int(os.environ.get("CHANNEL_LOG", ""))
+channel_1 = int(os.environ.get("CHANNEL_1", "-1001549513372"))
+channel_2 = int(os.environ.get("CHANNEL_2", "-1001811659938"))
+channel_log = int(os.environ.get("CHANNEL_LOG", "-1001811659938"))
 # =========================================================== #
 
-id_admin = int(os.environ.get("ID_ADMIN", ""))
+id_admin = int(os.environ.get("ID_ADMIN", "1243599890"))
 # =========================================================== #
 
-batas_kirim = int(os.environ.get("BATAS_KIRIM", "2"))
+batas_kirim = int(os.environ.get("BATAS_KIRIM", "5"))
 batas_talent = int(os.environ.get("BATAS_TALENT", "10"))
 batas_daddy_sugar = int(os.environ.get("BATAS_DADDY_SUGAR", "10"))
 batas_moansgirl = int(os.environ.get("BATAS_MOANSGIRL", "10"))
@@ -38,7 +38,7 @@ biaya_bfrent = int(os.environ.get("BIAYA_BFRENT", "30"))
 hastag = os.environ.get("HASTAG", "#Girl #Boy #Ask #Find #Spill #Story").replace(" ", "|").lower()
 # =========================================================== #
 
-pic_boy = os.environ.get("PIC_BOY", ")
+pic_boy = os.environ.get("PIC_BOY", "")
 pic_girl = os.environ.get("PIC_GIRL", "")
 # =========================================================== #
 
