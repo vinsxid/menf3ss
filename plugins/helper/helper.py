@@ -55,8 +55,8 @@ class Helper():
         link_1 = await self.bot.export_chat_invite_link(config.channel_1)
         link_2 = await self.bot.export_chat_invite_link(config.channel_2)
         markup = InlineKeyboardMarkup([
-            [InlineKeyboardButton('Channel base', url=link_1), InlineKeyboardButton('Group base', url=link_2)],
-            [InlineKeyboardButton('Coba lagi', url=f'https://t.me/{self.bot.username}?start=start')]
+            [InlineKeyboardButton('🌐 Channel Base', url=link_1), InlineKeyboardButton('✉️ Grup Base', url=link_2)],
+            [InlineKeyboardButton('🔄 Coba Lagi', url=f'https://t.me/{self.bot.username}?start=start')]
         ])
         await self.bot.send_message(self.user_id, config.pesan_join, reply_to_message_id=self.message.id, reply_markup=markup)
 
@@ -85,15 +85,15 @@ class Helper():
 
     async def send_to_channel_log(self, type: str = None, link: str = None):
         if type == 'log_daftar':
-            pesan = "<b>📊DATA USER BERHASIL DITAMBAHKAN DIDATABASE</b>\n"
+            pesan = "<b>📊 USER BERHASIL DITAMBAHKAN DI DATABASE</b>\n"
             pesan += f"├ Nama -: <b>{await self.escapeHTML(self.fullname)}</b>\n"
             pesan += f"├ ID -: <code>{self.user_id}</code>\n"
             pesan += f"├ Username -: {self.username}\n"
             pesan += f"├ Mention -: {self.mention}\n"
             pesan += f"├ Kirim pesan -: <a href='tg://openmessage?user_id={self.user_id}'>{await self.escapeHTML(self.fullname)}</a>\n"
-            pesan += f"└ Telegram Premium -: {'❌' if not self.premium else '✅'}"
+            pesan += f"└ Telegram Premium -: {'❌ False' if not self.premium else '✅ True'}"
         elif type == 'log_channel':
-            pesan = "INFO MESSAGE 💌\n"
+            pesan = " 💌 INFO PESAN\n"
             pesan += f"├ Nama -: <b>{await self.escapeHTML(self.fullname)}</b>\n"
             pesan += f"├ ID -: <code>{self.user_id}</code>\n"
             pesan += f"├ Username -: {self.username}\n"
