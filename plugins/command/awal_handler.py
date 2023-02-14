@@ -13,9 +13,9 @@ async def start_handler(client: Client, msg: types.Message):
     first = msg.from_user.first_name
     last = msg.from_user.last_name
     fullname = first if not last else first + ' ' + last
-    username = '@chatjomblohalu_bot' if not msg.from_user.username else '@' + msg.from_user.username
+    username = '@keluhkesahidbot' if not msg.from_user.username else '@' + msg.from_user.username
     mention = msg.from_user.mention
-    photo = "https://telegra.ph/file/277347c73f687921fb0ce.jpg"
+    photo = "https://telegra.ph//file/c8eadc7762ad160804e4c.jpg"
     await msg.reply_photo(
         photo=photo,
         caption = config.start_msg.format(
@@ -88,10 +88,10 @@ async def gagal_kirim_handler(client: Client, msg: types.Message):
     first_name = msg.from_user.first_name
     last_name = msg.from_user.last_name
     fullname = first_name if not last_name else first_name + ' ' + last_name
-    username = '@chatjomblohalu_bot' if not msg.from_user.username else '@' + msg.from_user.username
+    username = '@keluhkesahidbot' if not msg.from_user.username else '@' + msg.from_user.username
     mention = msg.from_user.mention
     return await msg.reply_photo(
-        photo = "https://telegra.ph/file/277347c73f687921fb0ce.jpg",
+        photo = "https://telegra.ph//file/c8eadc7762ad160804e4c.jpg",
         caption = config.gagalkirim_msg.format(
             id = msg.from_user.id,
             mention = mention,
