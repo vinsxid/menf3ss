@@ -9,8 +9,11 @@ db_url = os.environ.get("DB_URL", "mongodb+srv://fess1:fess1@cluster0.faqansq.mo
 db_name = os.environ.get("DB_NAME", "menfes1")
 # =========================================================== #
 
+#Channel Utama sambungin ke Grup Base
 channel_1 = int(os.environ.get("CHANNEL_1", "-1001549513372"))
+#Grup Base
 channel_2 = int(os.environ.get("CHANNEL_2", "-1001811659938"))
+#Channel Log sambungin ke Grup Log (Private)
 channel_log = int(os.environ.get("CHANNEL_LOG", "-1001811659938"))
 # =========================================================== #
 
