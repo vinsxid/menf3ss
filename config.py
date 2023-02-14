@@ -46,7 +46,7 @@ pic_girl = os.environ.get("PIC_GIRL", "")
 # =========================================================== #
 
 pesan_join = os.environ.get("PESAN_JOIN", "Tidak dapat diakses harap join terlebih dahulu")
-start_msg = os.environ.get("START_MSG", "Hai {fullname} 🌱 Yanto akan membantumu untuk mengirimkan pesan secara anonim ke channel . Silakan sampaikan pesanmu atau pap cute atau video konten positif kamu\n\nSebelum menggunakan silakan baca rules terlebih dahulu ya\n\nButuh bantuan? Hubungi yanto")
+start_msg = os.environ.get("START_MSG", "Hai {fullname} 🌱 Untuk mengirimkan pesan secara anonim ke channel . Silahkan sampaikan pesanmu atau pap cute atau video konten positif kamu\n\nSebelum menggunakan silakan baca rules terlebih dahulu ya\n\nButuh bantuan? Hubungi Admin")
 menu_msg = os.environ.get("MENU_MSG","""
 #Boy / #Girl untuk Mencari Pasangan, Teman , Partner FWB
 #Ask untuk Bertanya
@@ -54,7 +54,8 @@ menu_msg = os.environ.get("MENU_MSG","""
 #Spill untuk Spill Masalah
 #Find untuk Mencari Pasangan, Teman, Partner FWB
 
-Wajib username ya""")
+Wajib pake username..""")
+
 gagalkirim_msg = os.environ.get("GAGAL_KIRIM", """
 {mention}, pesan mu gagal terkirim silahkan gunakan hastag:
 
@@ -65,4 +66,4 @@ gagalkirim_msg = os.environ.get("GAGAL_KIRIM", """
 #Find untuk Mencari Pasangan, Teman, Partner FWB
 
 
-Wajib username ya""")
+Wajib pake username..""")
